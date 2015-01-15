@@ -1,3 +1,6 @@
 [submodule "site"]
 	path = site
 	url = https://Since84@github.com/Since84/Spark15.git
+[submodule "theme"]
+	path = theme
+	url = https://Since84@github.com/Since84/infograph.git
