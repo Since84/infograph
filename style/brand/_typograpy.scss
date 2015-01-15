@@ -1,0 +1,52 @@
+/* Rights For Girls Typography Variables and Mixins */ 
+
+@mixin maintext {
+	font-family: "merriweather", sans-serif;
+	font-size: 18px; //18pt
+}
+
+@mixin header {
+	font-family: "bebas-neue";
+	font-weight: 400; //Normal
+	text-transform: uppercase;
+}
+
+@mixin h1 {
+	@include header;
+	font-size: 40px; //40pt
+} 
+
+@mixin h2 {
+	font-family: "helvetica", sans-serif;
+	font-size: 25px; //25pt
+}
+
+@mixin h3 {
+	font-family: "helvetica", sans-serif;
+	font-weight: 700; //BOLD
+	font-size: 18px; //18pt
+}
+
+@mixin h4 {
+	@include header;
+	font-size: 20px; //20pt
+}
+
+@mixin h5 {
+	@include header;
+	font-weight: 700; //Demi
+	font-size: 50.67px; //38pt
+}
+
+@mixin h6 {
+	@include header;
+	font-weight: 700; //Demi
+	font-size: 32px; //24pt
+}
+
+@mixin h7 {
+	@include header;
+	font-family: "Franklin Gothic URW";
+	font-weight: 400; //Book
+	font-size: 21.33px; //16pt
+}
