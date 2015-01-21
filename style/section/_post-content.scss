@@ -1,0 +1,213 @@
+/* Post Content Styles for infogra.ph */
+.main {
+	position: relative;
+	z-index: 10;
+}
+#article {
+	z-index: 10;
+	overflow: visible;
+	@include row();
+
+	p {
+		margin-bottom: 1.5em;
+	}
+	a:link {
+		color: $coral;
+		text-decoration: none;
+	}
+
+
+	li {
+		padding-left: 1em;
+		margin-left: 1em;
+		margin-bottom: 1.5em;
+		&::before{
+			content: "•";
+			position: absolute;
+			color: $coral;
+			font-size: 18px;
+			left: 2em;
+		}
+	}
+	ul, ol { padding: 5px 2em; }
+
+	ol {
+		padding-left: 0;
+		counter-reset: item;
+		position: relative;
+		li {
+			padding-left: .5em;
+			&::before{
+				content: counter(item) ". ";
+				counter-increment: item;
+				color: $text;
+				left: 0;
+				font-size: 14px;
+			}
+		}
+	}
+
+	//Preview Paragraph with "View Infographic" button
+	.post-preview {
+		margin-top: -35vw;
+		margin-bottom: 15vw;
+		transition: all .5s ease-in;
+		color: white;
+		margin-left: 0;
+		@include column(12);
+		
+		p {
+			font-size: 18px;
+			color: white;
+			margin-top: 1em;
+		}
+
+		.post-date {
+			@include h2;
+			font-size: 12px;
+			padding: 5px 10px;
+			border: 2px solid white;
+			border-radius: 3px;
+			margin-bottom: 1em;
+			display: inline-block;
+			clear:both;
+			color: white;
+
+		}
+
+		.post-title {
+			font-family: "Bebas-neue";
+			font-size: 50px;
+			margin-bottom: .25em;
+			padding: 5px 0;
+		}
+
+		.toggle-infographic {
+			@include h2;  
+			font-size: 20px;
+			display: inline-block;
+			background: $coral;
+			border-radius: 4px; 
+			padding: 10px 20px;
+			margin-top: 1em;
+			&:before {
+				content: $search;
+				font-family: "FontAwesome";
+				margin-right: .5em; 
+				color: white;
+			}
+			&::after {
+				content: "View Infographic";
+				font-family: "Bebas-neue";
+				color: white;
+			}
+		}
+
+	}
+	&:not(.open) .post-preview { color: white; }
+	&.open {
+		.post-preview {
+			margin-top: 2em;
+			margin-bottom: 0;	
+			p { color: $text; }
+			.post-date { 
+				border-color: $darkbackblue;
+				color: $darkbackblue; 
+			}	
+			.toggle-infographic {  
+				position: absolute;
+				top: 0;
+				right: 0;
+				z-index: 100;
+				margin-top: 0;
+				border-radius: 0 0 4px 4px;
+				padding: 5px 10px;
+				&::before, &::after {
+					display: block;
+					width: auto;
+					margin: 0;
+					text-align: center;
+					color: white;
+				}
+				&::before {
+					content: $uparrow;
+				}
+				&::after {
+					content: "Close";
+					font-family: "Bebas-neue";
+				}
+			}
+		}
+
+		//Article Styles
+		h2{ color: $darkbackblue;  }
+		h3{ color: $coral; }
+	}
+
+	.post-content {
+		@include column(7);
+		margin-left: 0;
+	}
+	#recommended-articles {
+		@include column(4);
+		@include push(1);
+
+		h4 {
+			margin-bottom: 1em;
+			font-size: 24px;
+		}
+
+		.recommended { 
+		    align-items: flex-start;
+		    display: inline-flex;
+		    line-height: 1.25em;
+		    margin: 0 0 25px;
+		    padding-bottom: 1em;
+		    position: relative;
+		    border-bottom: 1px solid $lightgray;
+
+			a {
+			    position: absolute;
+			    top: 0;
+			    bottom: 0;
+			    left: 0;
+			    right: 0;
+			}
+			img {
+			    float: left;
+			    height: auto;
+			    min-width: 32%;
+			    max-width: 32%;
+			    margin: 0 5% 0 0;
+			    width: 32%;
+			}
+		}
+
+		.source {
+			@include sparkheader;
+			background: $coral;
+			padding: 5px;
+			border-radius: 5px;
+			color: white;
+			text-transform: none;
+			display: inline-block;
+			margin-bottom: .5em;
+		}
+
+		.post-title {
+			@include h4;
+			margin-bottom: .25em;
+		}
+
+		p {
+			@include maintext;
+		}
+
+		img {
+			display: inline-block;
+			vertical-align: top;
+		}
+	}
+
+}  
+

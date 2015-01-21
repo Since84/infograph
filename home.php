@@ -14,9 +14,17 @@
  */ 
 wp_head();
 
+$context = Timber::get_context();
+
+$args = array(
+    'showposts' => 1
+);
+$context['posts'] = Timber::get_posts($args);
+
+$posts = Theme_Theme::processPosts($context['posts']);
 
 ///Display Page 
-Timber::render( '/views/home.html.twig' );
+Timber::render( '/views/home.html.twig', $context );
 
 get_footer();
 wp_footer();

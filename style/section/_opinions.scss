@@ -1,0 +1,306 @@
+/* infogra.ph Color Palette */
+
+	section#opinions {
+	    color: #fff;
+	    display: block;
+	    float: left;
+	    margin: 75px 0 0;
+	    padding: 0 0 50px;
+	    width: 100%;
+	    background: $darkbackblue;
+	    border-top: 4px solid $lightblue;
+
+		h2 {
+			@include h1;
+			background: white;
+			border: 4px solid $lightblue;
+			color: $lightblue;
+			border-radius: 4px;
+		    -webkit-box-shadow: 0 1px 3px 1px rgba(0,0,0,.15);
+		    box-shadow: 0 1px 3px 1px rgba(0,0,0,.15);
+		    display: block;
+		    font-size: 175%;
+		    margin: 0 auto 1em;
+		    max-width: 32%;
+		    padding: 1em;
+		    position: relative;
+		    text-align: center;
+		    top: -1.5em;
+		}	
+
+
+		//Image Width
+		#opinionsources img, #opinionpieces img{
+		    max-width: 100%;
+		}
+
+		//Sources
+		.source {
+		    padding: 0 5%;
+
+			&:hover .author {
+			    -moz-transform: rotate(45deg);
+			    -webkit-transform: rotate(45deg);
+			    -o-transform: rotate(45deg);
+			    -ms-transform: rotate(45deg);
+			    transform: rotate(45deg);
+			}
+
+
+			&:hover .readmore span {
+			    top: 0;
+
+				&:before {
+				    content: 'Read More';
+				    -webkit-transition: color .3s ease-in-out;
+				    -moz-transition: color .3s ease-in-out;
+				    -ms-transition: color .3s ease-in-out;
+				    -o-transition: color .3s ease-in-out;
+				    transition: color .3s ease-in-out;
+				}
+			}
+
+			&:active span:before {
+			    color: #f96b61;
+			    color: rgba(249,107,97, 0);
+			}
+
+			&:hover .author {
+			    -moz-transform: rotate(45deg);
+			    -webkit-transform: rotate(45deg);
+			    -o-transform: rotate(45deg);
+			    -ms-transform: rotate(45deg);
+			    transform: rotate(45deg);
+			}
+
+			&:hover .readmore span {
+			    top: 0;
+			
+	
+			}
+
+			&:hover .readmore{
+			    opacity: 1;
+			    top: 20px;
+			    right: 20px;
+			    bottom: 20px;
+			    left: 20px;
+
+			    span{
+			    	@include sparkheader;
+			    	border: 2px solid white;
+			    	color: white;
+			    	padding: 4px 6px;
+			    	border-radius: 4px;
+			    	font-size: 20px;
+			    	&::before{ 
+			    		content: $downarrow;
+			    		font-family: "FontAwesome";
+			    		margin-right: 5px;
+					}
+					&::after {
+					    content: 'Read';
+					    -webkit-transition: color .3s ease-in-out;
+					    -moz-transition: color .3s ease-in-out;
+					    -ms-transition: color .3s ease-in-out;
+					    -o-transition: color .3s ease-in-out;
+					    transition: color .3s ease-in-out;
+					}	
+			    }
+			}
+
+			.current {
+				.authorphoto img {
+				    opacity: 1;
+				}
+				.author h4 {
+				    opacity: 0;
+				}
+				&:hover {
+					.readmore span{
+						&::after {
+						    content: $uparrow;
+						}
+						&::before {
+							content: 'Close';
+						}
+					}					
+				} 
+		
+			}
+
+			
+
+			&:active span:before {
+			    color: #f96b61;
+			    color: rgba(249,107,97, 0);
+			}
+
+			&:hover .authorphoto img {
+			    opacity: .85;
+			}
+			&:hover .author h4, 
+			&:hover .readmore, 
+			&:hover .authorphoto {
+			    -moz-transform: rotate(-45deg);
+			    -webkit-transform: rotate(-45deg);
+			    -o-transform: rotate(-45deg);
+			    -ms-transform: rotate(-45deg);
+			    transform: rotate(-45deg);
+			}
+
+			&:hover .author h4 {
+			    border: 1px solid #f96b61;
+			    opacity: 0;
+			    top: 30px;
+			    right: 30px;
+			    bottom: 30px;
+			    left: 30px;
+			}
+
+		}
+
+		.author {
+		    align-items: center;
+		    background-image: url(images/radialbg.png);
+		    background-position: center center;
+		    background-size: cover;
+		    -webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
+		    box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
+		    display: flex;
+		    -webkit-border-radius: 50%;
+		    border-radius: 50%;
+		    overflow:hidden;
+		    padding: 7px;
+		    position: relative;
+		    -webkit-transition: all .6s ease-in-out;
+		    -moz-transition: all .6s ease-in-out;
+		    -ms-transition: all .6s ease-in-out;
+		    -o-transition: all .6s ease-in-out;
+		    transition: all .6s ease-in-out;
+
+			h4, .readmore {
+			    align-items: center;
+			    -webkit-border-radius: 50%;
+			    border-radius: 50%;
+			    display: flex;
+			    overflow: hidden;
+			    position: absolute;
+			    text-align: center;
+			    -webkit-transition: all .6s ease-in-out;
+			    -moz-transition: all .6s ease-in-out;
+			    -ms-transition: all .6s ease-in-out;
+			    -o-transition: all .6s ease-in-out;
+			    transition: all .6s ease-in-out;
+
+				span{
+				    margin: 0 auto;
+				}
+
+			}
+
+			h4 {
+			    border: 2px solid #fff;
+			    outline: 1px solid transparent;
+			    opacity: 1;
+			    top: 50px;
+			    right: 50px;
+			    bottom: 50px;
+			    left: 50px;
+				small {
+				    clear: left;
+				    display: block;
+				    float: none;
+				}
+			}
+
+
+			.readmore {
+			    background: #f96b61;
+			    background: rgba(249,107,97, .75);
+			    outline: 1px solid transparent;
+			    color: #fff;
+			    opacity: 0;
+			    top: 50%;
+			    right:50%;
+			    bottom: 50%;
+			    left: 50%;
+
+				span {
+				    position: relative; 
+				    top: 25px;
+				}
+
+				&:hover {
+				    color: #fff;
+				}
+
+			}
+		}
+
+		.opinion-meta {
+			margin-top: 1em;
+
+			h3,h4 {
+				text-align: center;
+			}
+
+			h3 { //Name
+				@include h4;
+				font-size: 23px;
+			}
+			h4 { //Title
+				@include maintext;
+				font-style: italic;
+			}	
+		}
+
+		.authorphoto {
+		    background:#062a3c;
+		    -webkit-border-radius: 50%;
+		    border-radius: 50%;
+		    -webkit-transition: all .6s ease-in-out;
+		    -moz-transition: all .6s ease-in-out;
+		    -ms-transition: all .6s ease-in-out;
+		    -o-transition: all .6s ease-in-out;
+		    transition: all .6s ease-in-out;
+
+			img {
+			    opacity: .5;
+			    -webkit-border-radius: 50%;
+			    border-radius: 50%;
+			    -webkit-transition: opacity .6s ease-in-out;
+			    -moz-transition: opacity .6s ease-in-out;
+			    -ms-transition: opacity .6s ease-in-out;
+			    -o-transition: opacity .6s ease-in-out;
+			    transition: opacity .6s ease-in-out;
+			}
+
+		}
+
+		//Pieces
+		#opinionpieces {
+		    display: block;
+		    margin: 25px 0 0;
+
+		    article {
+			    opacity: 1;
+			    -webkit-transition: opacity 1.5s ease;
+			    -moz-transition: opacity 1.5s ease;
+			    -ms-transition: opacity 1.5s ease;
+			    -o-transition: opacity 1.5s ease;
+			    transition: opacity 1.5s ease;
+			    -webkit-transition: height 2s ease;
+			    -moz-transition: height 2s ease;
+			    -ms-transition: height 2s ease;
+			    -o-transition: height 2s ease;
+			    transition: height 2s ease;
+			    width: 100%;
+			}
+			&.closed article {
+			    opacity: 0;
+			}  
+
+		}		
+
+	}

@@ -1,0 +1,36 @@
+/* Base Styles for Infogra.ph */
+body {
+	color: $text;
+	font-size: 14px;
+	line-height: 1.3em;
+}
+
+p, ul, ol, span, em {
+	color: $text;
+	font-size: 14px;
+	line-height: 1.3em;
+}
+
+h1{ @include h1; }
+h2{ @include h2; }
+h3{ @include h3; }
+h4{ @include h4; }
+h5{ @include h5; }
+h6{ @include h6; }
+
+.container {
+	width: 100%;
+	max-width: $maxContainerWidth;
+	display: block;
+	margin: auto;
+	@include row();
+	.thirds{
+		@include column(8);
+		margin-left: 0;
+	}
+	.quarter{
+		@include column(3);
+		@include push(1);
+	}
+}
+

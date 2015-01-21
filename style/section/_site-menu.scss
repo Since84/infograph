@@ -1,0 +1,182 @@
+/* Site Menu Section of Infogra.ph */
+
+	#site-menu {
+	    align-content: center;
+	    border-bottom: 5px solid $coral;
+	    display: flex;
+	    width: 100%;
+	    overflow:hidden;
+	    padding: 0;
+	    max-height: 0;
+	    transition: max-height .75s ease-in;
+
+	    &.on {
+	    	max-height: 1000px;
+	    }
+
+	    .container {
+	    	padding: 60px 0 50px;
+	    }
+
+		h2.more-info {
+			@include sparkheader;
+			font-size: 30pt;
+		    margin: 0 0 1em;
+		}
+		img {
+		    width: 187px;
+		    height: 187px;
+		}
+
+		#menu {
+		    display: inline-block;
+		    line-height: 0;
+
+			.owl-item {
+			    width: 9.7vw;
+			    height: 9.7vw;
+			}
+			.nav-item {
+				width: 100%;
+				height: 100%;
+			    background-size: auto 100%;
+			    background-position: center center;
+			    border: 5px solid #03212e;
+			    position: relative;
+			    -webkit-transition: all .5s ease;
+			    -moz-transition: all .5s ease;
+			    -ms-transition: all .5s ease;
+			    -o-transition: all .5s ease;
+			    transition: all .5s ease;
+
+				&.first, &:hover {
+				    background-size: auto 100%;
+				    border: 5px solid $coral;
+				}
+				&:hover {
+				    background-size: auto 110%;
+				    border: 5px solid #f96b61;
+				}
+				a {
+				    background: rgba(0,0,0,.85);
+				    display: flex;
+				    align-items: center;
+				    position: absolute;
+				    top: 0;
+				    left: 0;
+				    right: 0;
+				    bottom: 0;
+				    -webkit-transition: background .5s ease;
+				    -moz-transition: background .5s ease;
+				    -ms-transition: background .5s ease;
+				    -o-transition: background .5s ease;
+				    transition: background .5s ease;
+					&:hover {
+					    background: rgba(0,0,0,0);
+					}
+				}
+
+				h4 {
+				    background: #fff;
+				    color: #21a591;
+				    max-width: 70%;
+				    padding: 10px 5px;
+				    position: absolute;
+				    text-align: center;
+				    top: -1.5em;
+				}
+				h3 {
+				    color: #fff;
+				    opacity: 1;
+				    padding: 2em;
+				    position: relative;
+				    top: 0;
+				    -webkit-transition: all .5s ease;
+				    -moz-transition: all .5s ease;
+				    -ms-transition: all .5s ease;
+				    -o-transition: all .5s ease;
+				    transition: all .5s ease;
+				}
+				&.first h3 {
+				    display: none;
+				}
+				&:hover h3 {
+				    opacity: 0;
+				    top: -15px;
+				}
+
+			}
+		}
+
+	}
+
+
+	#sitewrap.show-nav {
+	    overflow-y:visible;
+
+		#sitecanvas {
+		    -webkit-transform: translate3d(0, 400px, 0);
+		    transform: translate3d(0, 400px, 0);
+		}
+	
+	}
+
+	h1 .fa-navicon {
+	    background-color: #f96b61;
+	    -webkit-border-radius: 3px;
+	    border-radius: 3px;
+	    color: #fff;
+	    margin: 0 15px 0 0;
+	    padding: 15px 15px;
+	}
+
+	a.next, a.prev {
+	    color: #fff;
+	    display: block;
+	    font-size: 300%;
+	    padding: 20px;
+	    position: relative;
+	    top: -180px;
+	}
+	a.prev {
+	    display: block;
+	    left: -50px;
+	    float: left;
+	}
+	a.next {
+	    display: block;
+	    float: right;
+	    right: -50px;
+	}
+	
+
+	#menu2 {
+		@include h2;
+		font-size: 16px;
+	    list-style-type: none;
+	    margin: 5px 0 0;
+	    padding: 0;
+
+
+		li {
+		    border-bottom: 1px solid $lightgray;
+		    padding: 15px 0;
+		    transition: color .5s;
+		    cursor: pointer;
+		
+			&:first-child {
+			    border-top: none;
+			    padding: 0 0 15px;
+			}
+			&:last-child {
+			    border-bottom: none;
+			    margin-bottom: 0;
+			    padding-bottom: 0;
+			}
+			&:hover {
+				color: $coral;
+			}
+
+		}	
+
+	}

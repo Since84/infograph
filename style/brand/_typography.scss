@@ -2,18 +2,19 @@
 
 @mixin maintext {
 	font-family: "merriweather", sans-serif;
-	font-size: 18px; //18pt
+	font-size: 12px; //18pt
 }
 
-@mixin header {
+@mixin sparkheader {
 	font-family: "bebas-neue";
 	font-weight: 400; //Normal
 	text-transform: uppercase;
 }
 
 @mixin h1 {
-	@include header;
+	@include sparkheader;
 	font-size: 40px; //40pt
+	line-height: 1em;
 } 
 
 @mixin h2 {
@@ -28,24 +29,24 @@
 }
 
 @mixin h4 {
-	@include header;
+	@include sparkheader;
 	font-size: 20px; //20pt
 }
 
 @mixin h5 {
-	@include header;
+	@include sparkheader;
 	font-weight: 700; //Demi
 	font-size: 50.67px; //38pt
 }
 
 @mixin h6 {
-	@include header;
+	@include sparkheader;
 	font-weight: 700; //Demi
 	font-size: 32px; //24pt
 }
 
 @mixin h7 {
-	@include header;
+	@include sparkheader;
 	font-family: "Franklin Gothic URW";
 	font-weight: 400; //Book
 	font-size: 21.33px; //16pt

@@ -1,0 +1,14 @@
+/* Styles for infographic section of infogra.ph */
+	
+#infographic {
+	z-index: -1;
+	height: 47vw;
+	transition: height .5s linear;
+	img {
+		opacity: .1;
+	}
+
+	&.open {
+		height: 90vw;
+	}
+}

@@ -1,4 +1,4 @@
-<body>
+<body id="infograph_application">
     <ul class="skip-nav">
         <li><a href="#skip-navigation">Skip to navigation</a></li>
         <li><a href="#skip-content">Skip to main content</a></li>
@@ -19,78 +19,79 @@
         <!-- sitecanvas is what slides when the menu comes in -->    
         <div id="sitecanvas">
             <div class="wrapper">
-                <header class="full-width">
-                    <div id="site-menu">
-                        <div class="container">
-                            <!-- Menu Starts -->
-                            <h2>More Info</h2>
-                            <div class="thirds">
-                                <div id="menu" class="owl-carousel">
-                                    <div class="nav-item first"  style="background-image:url('images/middle-east-sm.jpg');">
-                                        <h4>Current Topic</h4>
+                <div id="site-menu">
+                    <div class="container">
+                        <!-- Menu Starts -->
+                        <h2 class="more-info">More Info</h2>
+                        <div class="thirds">
+                            <div id="menu" class="owl-carousel">
+                                <div class="nav-item first"  style="background-image:url('images/middle-east-sm.jpg');">
+                                    <h4>Current Topic</h4>
+                                    <h3>
+                                        <span class="date">Date Posted</span>
+                                        Infographic Title
+                                    </h3>
+                                </div>
+                                <div class="nav-item"  style="background-image:url('images/middle-east-sm.jpg');">
+                                    <a href="#">
                                         <h3>
-                                            <span class="date">Date Posted</span>
+                                            <span>Date Posted</span>
                                             Infographic Title
                                         </h3>
-                                    </div>
-                                    <div class="nav-item"  style="background-image:url('images/middle-east-sm.jpg');">
-                                        <a href="#">
-                                            <h3>
-                                                <span>Date Posted</span>
-                                                Infographic Title
-                                            </h3>
-                                        </a>
-                                    </div>
-                                    <div class="nav-item"  style="background-image:url('images/middle-east-sm.jpg');">
-                                        <a href="#">
-                                            <h3>
-                                                <span>Date Posted</span>
-                                                Infographic Title
-                                            </h3>
-                                        </a>
-                                    </div>
-                                    <div class="nav-item"  style="background-image:url('images/middle-east-sm.jpg');">
-                                        <a href="#">
-                                            <h3>
-                                                <span>Date Posted</span>
-                                                Infographic Title
-                                            </h3>
-                                        </a>
-                                    </div>
+                                    </a>
                                 </div>
-                                <div class="customNavigation">
-                                    <a class="btn prev"><i class="fa fa-angle-left"></i></a>
-                                    <a class="btn next"><i class="fa fa-angle-right"></i></a>
+                                <div class="nav-item"  style="background-image:url('images/middle-east-sm.jpg');">
+                                    <a href="#">
+                                        <h3>
+                                            <span>Date Posted</span>
+                                            Infographic Title
+                                        </h3>
+                                    </a>
+                                </div>
+                                <div class="nav-item"  style="background-image:url('images/middle-east-sm.jpg');">
+                                    <a href="#">
+                                        <h3>
+                                            <span>Date Posted</span>
+                                            Infographic Title
+                                        </h3>
+                                    </a>
                                 </div>
                             </div>
-                            <div class="quarter">
-                                <ul id="menu2">
-                                    <li>I am another menu!</li>
-                                    <li>I am another menu!</li>
-                                    <li>I am another menu!</li>
-                                    <li>I am another menu!</li>
-                                </ul>
-
+                            <div class="customNavigation">
+                                <a class="btn prev"><i class="fa fa-angle-left"></i></a>
+                                <a class="btn next"><i class="fa fa-angle-right"></i></a>
                             </div>
-                            <!-- Menu Ends -->
-                            
                         </div>
+                        <div class="quarter">
+                            <ul id="menu2">
+                                <li>I am another menu!</li>
+                                <li>I am another menu!</li>
+                                <li>I am another menu!</li>
+                                <li>I am another menu!</li>
+                            </ul>
+
+                        </div>
+                        <!-- Menu Ends -->
+                        
                     </div>
+                </div>
+                <header class="full-width">
                     <div id="banner" class="container">
-                        <h1><a class="toggle-nav" href="#"><i class="fa fa-navicon"></i></a><strong> Infogra.ph</strong>  Current Topic</h1>
+                        <span class="menu-button"></span>
+                        <h1 class="logo"> 
+                            <img class="large-logo" src="{{ bloginfo('stylesheet_directory') }}/images/logo_large_white.png" alt="Logo" />
+                            <img class="small-logo" src="{{ bloginfo('stylesheet_directory') }}/images/logo_small.png" alt="Small Logo" />
+                        </h1>
                         <ul class="sharing">
-                            <li>Follow Us</li>
-                            <li><a href="#" target="_blank" title="Follow us on Twitter"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#" target="_blank" title="Follow us on Facebook"><i class="fa fa-facebook"></i></a></li>
+                            <li class="follow-us">Follow Us</li>
+                            <li class="social twitter"><a href="#" target="_blank" title="Follow us on Twitter"><i class="fa fa-twitter"></i></a></li>
+                            <li class="social facebook"><a href="#" target="_blank" title="Follow us on Facebook"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="#" title="Share This Page"><i class="fa fa-plus"></i></a></li>
                         </ul>
                     </div>
                 </header>
                 <section class="full-width" id="infographic">
-                    <div class="container infographic">
-                        <p class="intro tall">
-                            This is intro text to provide context before the infographic in case the article isn't immediately visible. Legal aid employment tackling; disruptor donors; mobilize countries, research scalable carbon rights. Worldwide catalyze; collaborative consumption contribution, activism vulnerable population UNICEF long-term.
-                        </p>
+                    <div class="infographic">
                         <picture>
                             <!-- Wide Infographic -->
                             <source
@@ -107,45 +108,34 @@
                             src="images/infographic-large.png"
                             alt="Detail of the above quilt, highlighting the embroidery and exotic stitchwork." />
                         </picture>
-                        <p class="intro wide">
-                            This is intro text to provide context before the infographic in case the article isn't immediately visible. Legal aid employment tackling; disruptor donors; mobilize countries, research scalable carbon rights. Worldwide catalyze; collaborative consumption contribution, activism vulnerable population UNICEF long-term.
-                        </p>
                     </div>
-                    <div class="container main">
-                        <article id="article">
-                            <a id="skip-content" ></a>
-                            <h2>
-                                Article Title
-                                <span>Date Posted</span>
+                </section>
+
+                <section class="container main">
+                    {% for post in posts %}
+                    <article id="article">
+                        <a id="skip-content" ></a>
+
+                        <div class="post-preview">
+                            <span class="post-date">{{ post.post_date }}</span>
+                            <h2 class="post-title">
+                                {{ post.post_title }}
                             </h2>
-
-                            <p>Medical empowerment, improving quality life-saving clean water Peace Corps, impact meaningful work Aga Khan courageous. End hunger; sharing economy climate change, sustainable, facilitate political Bloomberg public service Rockefeller new approaches best practices billionaire philanthropy. Life-expectancy opportunity countries replicable 501(c)(3), change international sanitation Gandhi. Engage global theory of social change; think tank truth foundation refugee underprivileged.
-
-                            <p>Celebrate shift UNHCR integrity fellows; fight against oppression technology fundraising campaign. Social impact policy; activist change lives turmoil, nonprofit fight against malnutrition democratizing the global financial system reproductive rights empower development. Socio-economic divide, criteria educate women's rights social worker evolution partner. Nutrition; fluctuation; Andrew Carnegie, prevention catalytic effect, United Nations global citizens, country, social movement health immunize social challenges urban institutions. Social good, microloans solutions revitalize promising development approach minority, humanitarian relief Action Against Hunger fundraise. Accelerate; philanthropy economic security carbon rights investment. Progressive, innovation participatory monitoring, global health education vulnerable citizens.</p>
-
-                            <blockquote>
-                                Celebrate shift UNHCR integrity fellows; fight against oppression technology fundraising campaign. Social impact policy; activist change lives turmoil, nonprofit fight against malnutrition democratizing the global financial system reproductive rights empower development.
-                            </blockquote>
-
-                            <p>Tackle, initiative disruptor tackling agency working alongside, equal opportunity progress honesty effectiveness relief frontline. Compassion expanding community ownership long-term combat poverty informal economies solution. Our ambitions safety pathway to a better life policy dialogue policymakers capacity building, forward-thinking medicine public-private partnerships necessities strengthen democracy developing nations innovate asylum. Accessibility; voice, synthesize human-centered design; accelerate progress research cause UNICEF board of directors. Growth civic engagement design thinking complexity catalyst. Respond, Kickstarter partnership local marginalized communities globalization respect global leaders Global South save the world. Crowdsourcing peace many voices Jane Jacobs vaccine.</p>
-
-                            <div class="small">
-                                <h3>Sources</h3>
-                                <ol class="sources">
-                                    <li>Momentum fight against malnutrition Arab Spring storytelling sustainable respond.</li>
-                                    <li>Arab Spring storytelling sustainable respond. Social challenges cross-agency coordination expanding community ownership dialogue accelerate.</li>
-                                    <li>Social challenges</li>
-                                </ol>
-                            </div>
-                        </article>
-                        <aside id="articles">
-                            <h3>Dive Deeper</h3>
+                            <h3>{{ post.post_subtitle }}</h3>
+                            <p>{{ post.post_excerpt }}</p>
+                            <span class="toggle-infographic"></span>
+                        </div>
+                        <div class="post-content">
+                            {{ post.post_content }}
+                        </div>
+                        <aside id="recommended-articles">
+                            <h4>Dive Deeper</h4>
                             <div class="recommended">
                                 <a href="#" target="_blank"></a>
                                 <img src="images/middle-east-sm.jpg" alt="middle east" />
                                 <div class="entry">
-                                    <h5>Article Source</h5>
-                                    <h4>Article Title Goes Here</h4>
+                                    <span class="source">Article Source</span>
+                                    <h4 class="post-title">Article Title Goes Here</h4>
                                     <p>A Summary of the article and why we've included it here</p>
                                 </div>
                             </div>
@@ -153,8 +143,8 @@
                                 <a href="#" target="_blank"></a>
                                 <img src="images/middle-east-sm.jpg" alt="middle east" />
                                 <div class="entry">
-                                    <h5>Article Source</h5>
-                                    <h4>Article Title Goes Here</h4>
+                                    <span class="source">Article Source</span>
+                                    <h4 class="post-title">Article Title Goes Here</h4>
                                     <p>A Summary of the article and why we've included it here</p>
                                 </div>
                             </div>
@@ -162,8 +152,8 @@
                                 <a href="#" target="_blank"></a>
                                 <img src="images/middle-east-sm.jpg" alt="middle east" />
                                 <div class="entry">
-                                    <h5>Article Source</h5>
-                                    <h4>Article Title Goes Here</h4>
+                                    <span class="source">Article Source</span>
+                                    <h4 class="post-title">Article Title Goes Here</h4>
                                     <p>A Summary of the article and why we've included it here</p>
                                 </div>
                             </div>
@@ -171,8 +161,8 @@
                                 <a href="#" target="_blank"></a>
                                 <img src="images/middle-east-sm.jpg" alt="middle east" />
                                 <div class="entry">
-                                    <h5>Article Source</h5>
-                                    <h4>Article Title Goes Here</h4>
+                                    <span class="source">Article Source</span>
+                                    <h4 class="post-title">Article Title Goes Here</h4>
                                     <p>A Summary of the article and why we've included it here</p>
                                 </div>
                             </div>
@@ -180,74 +170,55 @@
                                 <a href="#" target="_blank"></a>
                                 <img src="images/middle-east-sm.jpg" alt="middle east" />
                                 <div class="entry">
-                                    <h5>Article Source</h5>
-                                    <h4>Article Title Goes Here</h4>
+                                    <span class="source">Article Source</span>
+                                    <h4 class="post-title">Article Title Goes Here</h4>
                                     <p>A Summary of the article and why we've included it here</p>
                                 </div>
                             </div>
                         </aside>
-                    </div>
+                    </article>
+                    {% endfor %}
                 </section>
+
                 <section id="opinions" class="full-width">
                     <div class="container">
-                        <h3>Opinions</h3>
+                        <h2>Opinions</h2>
                         <div id="opinionsources" class="owl-carousel">
                             <div class="source">
                                 <div class="author">
                                     <div class="authorphoto">
                                         <img src="images/contributor.jpg" alt="">
                                     </div>
-                                    <h4>
-                                        <span>
-                                            Quotee's Name
-                                            <small>
-                                                Quotee's title
-                                            </small>
-                                        </span>
-                                    </h4>
                                     <a class="readmore"><span></span></a>
                                 </div>
-                                <blockquote>
-                                    An Excerpt of what the quotee said.
-                                </blockquote>
+                                <div class="opinion-meta">
+                                    <h3>Quotee's Name</h3>
+                                    <h4>Quotee's Title</h4>
+                                </div>
                             </div>
                             <div class="source">
                                 <div class="author">
                                     <div class="authorphoto">
                                         <img src="images/contributor.jpg" alt="">
                                     </div>
-                                    <h4>
-                                        <span>
-                                            Quotee's Name
-                                            <small>
-                                                Quotee's title
-                                            </small>
-                                        </span>
-                                    </h4>
                                     <a class="readmore"><span></span></a>
                                 </div>
-                                <blockquote>
-                                    An Excerpt of what the quotee said.
-                                </blockquote>
+                                <div class="opinion-meta">
+                                    <h3>Quotee's Name</h3>
+                                    <h4>Quotee's Title</h4>
+                                </div>
                             </div>
                             <div class="source">
                                 <div class="author">
                                     <div class="authorphoto">
                                         <img src="images/contributor.jpg" alt="">
                                     </div>
-                                    <h4>
-                                        <span>
-                                            Quotee's Name
-                                            <small>
-                                                Quotee's title
-                                            </small>
-                                        </span>
-                                    </h4>
                                     <a class="readmore"><span></span></a>
                                 </div>
-                                <blockquote>
-                                    An Excerpt of what the quotee said.
-                                </blockquote>
+                                <div class="opinion-meta">
+                                    <h3>Quotee's Name</h3>
+                                    <h4>Quotee's Title</h4>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -282,75 +253,75 @@
                 </section>
                 <footer id="footer" class="full-width">
                     <a id="skip-footer" ></a >
-                    <div class="container">
-                        <a href="http://elefintdesigns.com" title="Elefint Designs" target="_blank" class="elefintlogo">
-                            <!--[if gte IE 9]><!-->
-                            A project of 
-                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                            viewBox="0 0 230 48" enable-background="new 0 0 230 48" xml:space="preserve">
+                        <div class="container">
+                            <a href="http://elefintdesigns.com" title="Elefint Designs" target="_blank" class="elefintlogo">
+                                <!--[if gte IE 9]><!-->
+                                A project of 
+                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                viewBox="0 0 230 48" enable-background="new 0 0 230 48" xml:space="preserve">
                                 <g>
                                     <g>
-                                       <path class="text" d="M4.7,32c0.4,3.6,2.7,4.8,5.2,4.8c1.4,0,3.1-0.4,4.4-1l0.3,2.5c-1.1,0.5-2.8,1.1-5,1.1
-                                       c-5.3,0-8.1-3.6-8.1-7.8c0-4.2,2.7-7.7,7.2-7.7c3.7,0,6.5,2.4,6.5,6.4c0,0.5,0,1.1-0.2,1.7H4.7z M4.8,29.9h7.2
-                                       c0-1.8-1-3.3-3.3-3.3C6.5,26.7,5.3,27.9,4.8,29.9z"/>
-                                       <path class="text" d="M22.7,39.5h-1c-2.8,0-3.8-1.8-3.8-3.7V16.6h3v17.7c0,2.5,0.3,2.8,2.2,2.8L22.7,39.5z"/>
-                                       <path class="text" d="M27.4,32c0.4,3.6,2.7,4.8,5.2,4.8c1.4,0,3.1-0.4,4.4-1l0.3,2.5c-1.1,0.5-2.8,1.1-5,1.1
-                                       c-5.3,0-8.1-3.6-8.1-7.8c0-4.2,2.7-7.7,7.2-7.7c3.7,0,6.5,2.4,6.5,6.4c0,0.5,0,1.1-0.2,1.7H27.4z M27.6,29.9h7.2
-                                       c0-1.8-1-3.3-3.3-3.3C29.3,26.7,28.1,27.9,27.6,29.9z"/>
-                                       <path class="text" d="M44.7,26.8v12.4h-3.1V26.8h-2.4l0.3-2.4h2.1v-3.7c0-2.2,1.2-4,3.5-4c1.8,0,2.4,0.1,3.2,0.3l-0.4,2.6
-                                       c-0.7-0.2-1.3-0.2-1.7-0.2c-1.3,0-1.5,0.6-1.5,3.2v1.9h3.7v2.4H44.7z"/>
-                                       <path class="text" d="M50.8,21.3v-3.3h3.1v3.3H50.8z M50.8,39.2V24.3h3.1v14.9H50.8z"/>
-                                       <path class="text" d="M67.7,39.2V31c0-3-1-4.4-3.6-4.4c-1.5,0-2.9,0.5-3.6,1.7v10.8h-3.1V24.3h2.6l0.2,1.3
-                                       c1.4-1.2,2.9-1.6,4.3-1.6c4.5,0,6.2,2.8,6.2,7v8.1H67.7z"/>
-                                       <path class="text" d="M81.7,39.5h-2.5c-2.8,0-3.9-1.8-3.9-3.7v-9h-2.4l0.3-2.4h2.1v-3.6l3.1-0.3v3.9H82v2.4h-3.7v7.4
-                                       c0,2.6,0.2,2.8,2.8,2.8h0.8L81.7,39.5z"/>
-                                   </g>
-                                   <g>
-                                      <path class="text" d="M145.4,39.1l-0.2-1.5c-1.1,1.2-2.8,1.8-4.2,1.8c-4.1,0-6.9-3.4-6.9-7.7c0-4.1,2.6-7.7,6.9-7.7
-                                      c1.4,0,3,0.4,4.2,1.6v-9h3v22.6H145.4z M137.2,31.7c0,2.9,1.5,5.1,4,5.1c2.3,0,4.2-1.6,4.2-5c0-3.3-2-5.2-4.2-5.2
-                                      C138.7,26.6,137.2,28.8,137.2,31.7z"/>
-                                      <path class="text" d="M154.1,32c0.4,3.6,2.7,4.8,5.2,4.8c1.4,0,3.1-0.4,4.4-1l0.3,2.5c-1.1,0.5-2.8,1.1-5,1.1
-                                      c-5.3,0-8.1-3.6-8.1-7.8c0-4.2,2.7-7.7,7.2-7.7c3.7,0,6.5,2.4,6.5,6.4c0,0.5,0,1.1-0.2,1.7H154.1z M154.3,29.9h7.2
-                                      c0-1.8-1-3.3-3.3-3.3C155.9,26.6,154.8,27.9,154.3,29.9z"/>
-                                      <path class="text" d="M166.5,38.2l0.3-2.8c0.7,0.6,2.6,1.5,4.6,1.5c1.9,0,2.7-0.8,2.7-1.8c0-1.4-1.6-2-2.9-2.4
-                                      c-2.1-0.6-4.5-1.3-4.5-4.3c0-2.2,1.4-4.6,5.5-4.6c2,0,3.4,0.5,4.3,1l-0.3,2.7c-0.8-0.7-2.1-1.4-3.8-1.4c-1.6,0-2.7,0.6-2.7,1.9
-                                      c0,1.4,1.3,1.7,3.4,2.4c1.7,0.5,4.2,1.4,4.2,4.5c0,1.9-1,4.4-5.7,4.4C169.1,39.4,167.3,38.7,166.5,38.2z"/>
-                                      <path class="text" d="M180,21.3V18h3.1v3.3H180z M180,39.1V24.3h3.1v14.9H180z"/>
-                                      <path class="text" d="M185.6,42.2c0-1,0.5-2.5,2.6-3.3c-1.1-0.6-1.4-1.3-1.4-2c0-0.7,0.4-1.5,1.7-2.1c-1.9-1.4-2.5-3.2-2.5-4.9
-                                      c0-3.2,2.1-5.9,6.1-5.9c1.4,0,2.6,0.3,3.6,1c0.8-0.4,2-0.8,3.5-0.8h0.5l-0.3,2h-0.9c-0.2,0-0.9,0.1-1.4,0.2
-                                      c0.9,1.2,1.2,2.4,1.2,3.5c0,3.1-2.1,5.9-6,5.9c-0.7,0-1.4-0.1-2-0.2c-0.3,0.2-0.6,0.5-0.6,0.8c0,0.8,1.1,1,4.3,1.4
-                                      c2.3,0.4,6,1.1,6,4.3c0,2.6-2.5,4.7-7.4,4.7C187.5,46.7,185.6,44.3,185.6,42.2z M190.7,39.6c-1.3,0.4-2.3,1.4-2.3,2.4
-                                      c0,1.3,1.5,2.3,4.2,2.3c2.8,0,4.4-1.1,4.4-2.3c0-1.2-1.5-1.8-3.9-2.2C192.8,39.9,191.1,39.7,190.7,39.6z M188.8,29.8
-                                      c0,2.2,1.3,3.6,3.3,3.6c2.1,0,3.2-1.5,3.2-3.6c0-2.2-1.3-3.4-3.3-3.4C189.9,26.3,188.8,27.8,188.8,29.8z"/>
-                                      <path class="text" d="M212,39.1V31c0-3-1-4.4-3.6-4.4c-1.5,0-2.9,0.5-3.6,1.7v10.8h-3.1V24.3h2.6l0.2,1.3
-                                      c1.4-1.2,2.9-1.6,4.3-1.6c4.5,0,6.2,2.8,6.2,7v8.1H212z"/>
-                                      <path class="text" d="M217.7,38.2l0.3-2.8c0.7,0.6,2.6,1.5,4.6,1.5c1.9,0,2.7-0.8,2.7-1.8c0-1.4-1.6-2-2.9-2.4
-                                      c-2-0.6-4.5-1.3-4.5-4.3c0-2.2,1.4-4.6,5.5-4.6c2,0,3.4,0.5,4.3,1l-0.3,2.7c-0.8-0.7-2.1-1.4-3.8-1.4c-1.6,0-2.7,0.6-2.7,1.9
-                                      c0,1.4,1.3,1.7,3.4,2.4c1.7,0.5,4.2,1.4,4.2,4.5c0,1.9-1,4.4-5.7,4.4C220.2,39.4,218.5,38.7,217.7,38.2z"/>
-                                  </g>
-                                  <g>
-                                      <path fill="none" d="M108.1,29.8c0.2,1.3,0.5,2.7,1.7,3.1c0.3-1.6,3-1,2.3-3.6C110.5,28.5,109.7,29.1,108.1,29.8z"/>
-                                      <path fill="none" d="M131.6,5.2c-2.4-0.2-3.5,0.8-3.9,2.5l0,0.1c0,0,0,0.1,0,0.1c0,0.2,0.1,0.4,0.3,0.4l0.1,0
-                                      c1.1,0.6,3.5,0.5,4.2-0.3C132.6,6.5,131.3,6.6,131.6,5.2z"/>
-                                      <path id="fint" d="M124.1,6.9c-5.9-2.3-9.6,1.4-12.6,4c-19.2-2.6-17,13.3-18.8,27.4l0,0c0,0.3,0.2,0.5,0.5,0.5l0,0
-                                      c2.4-0.1,3.7,0.8,6.1,0.7l0,0c0.3,0,0.5-0.2,0.5-0.5c0-0.1,0-0.1,0-0.2l0,0c-1.1-3.4-1.3-8,1.4-9.9l0.1-0.1
-                                      c0.1-0.1,0.2-0.1,0.3-0.1c0.2,0,0.4,0.1,0.4,0.3l0,0.1c1.3,2.4,1.5,5.9,1.4,9.8l0,0c0,0.3,0.2,0.5,0.5,0.5h0c2.7,0,5.5,0,8.2,0
-                                      h0.1c0.2,0,0.4-0.1,0.5-0.3l0,0c1.3-2.9,3.4-5,5.1-7.5l0.1-0.1c0.1-0.1,0.2-0.2,0.4-0.2c0.2,0,0.4,0.1,0.5,0.3l0,0.1
-                                      c0.8,1.7,1,4.8,0.3,6.7l0,0.1c0,0.1,0,0.1,0,0.2c0,0.3,0.2,0.5,0.4,0.5c0,0,0,0,0.1,0l0,0c1.2,0.1,3.2-0.5,5.1-0.3l0.1,0
-                                      c0.2,0,0.4-0.1,0.5-0.3l0-0.1c1.6-5.6-4.1-12.1-3.6-15.5c0.7-5,11.1-6.5,13.7-10.8C141.1,3,127.1-4,124.1,6.9z M109.8,32.8
-                                      c-1.1-0.4-1.5-1.7-1.7-3.1c1.6-0.7,2.4-1.2,4-0.6C112.8,31.8,110.1,31.2,109.8,32.8z M132.1,8.1c-0.7,0.7-3.1,0.8-4.2,0.3l-0.1,0
-                                      c-0.2-0.1-0.3-0.3-0.3-0.4c0,0,0-0.1,0-0.1l0-0.1c0.4-1.7,1.6-2.7,3.9-2.5C131.3,6.6,132.6,6.5,132.1,8.1z"/>
-                                  </g>
-                                </g>
-                            </svg>
-                                  <!--<![endif]-->
+                                     <path class="text" d="M4.7,32c0.4,3.6,2.7,4.8,5.2,4.8c1.4,0,3.1-0.4,4.4-1l0.3,2.5c-1.1,0.5-2.8,1.1-5,1.1
+                                     c-5.3,0-8.1-3.6-8.1-7.8c0-4.2,2.7-7.7,7.2-7.7c3.7,0,6.5,2.4,6.5,6.4c0,0.5,0,1.1-0.2,1.7H4.7z M4.8,29.9h7.2
+                                     c0-1.8-1-3.3-3.3-3.3C6.5,26.7,5.3,27.9,4.8,29.9z"/>
+                                     <path class="text" d="M22.7,39.5h-1c-2.8,0-3.8-1.8-3.8-3.7V16.6h3v17.7c0,2.5,0.3,2.8,2.2,2.8L22.7,39.5z"/>
+                                     <path class="text" d="M27.4,32c0.4,3.6,2.7,4.8,5.2,4.8c1.4,0,3.1-0.4,4.4-1l0.3,2.5c-1.1,0.5-2.8,1.1-5,1.1
+                                     c-5.3,0-8.1-3.6-8.1-7.8c0-4.2,2.7-7.7,7.2-7.7c3.7,0,6.5,2.4,6.5,6.4c0,0.5,0,1.1-0.2,1.7H27.4z M27.6,29.9h7.2
+                                     c0-1.8-1-3.3-3.3-3.3C29.3,26.7,28.1,27.9,27.6,29.9z"/>
+                                     <path class="text" d="M44.7,26.8v12.4h-3.1V26.8h-2.4l0.3-2.4h2.1v-3.7c0-2.2,1.2-4,3.5-4c1.8,0,2.4,0.1,3.2,0.3l-0.4,2.6
+                                     c-0.7-0.2-1.3-0.2-1.7-0.2c-1.3,0-1.5,0.6-1.5,3.2v1.9h3.7v2.4H44.7z"/>
+                                     <path class="text" d="M50.8,21.3v-3.3h3.1v3.3H50.8z M50.8,39.2V24.3h3.1v14.9H50.8z"/>
+                                     <path class="text" d="M67.7,39.2V31c0-3-1-4.4-3.6-4.4c-1.5,0-2.9,0.5-3.6,1.7v10.8h-3.1V24.3h2.6l0.2,1.3
+                                     c1.4-1.2,2.9-1.6,4.3-1.6c4.5,0,6.2,2.8,6.2,7v8.1H67.7z"/>
+                                     <path class="text" d="M81.7,39.5h-2.5c-2.8,0-3.9-1.8-3.9-3.7v-9h-2.4l0.3-2.4h2.1v-3.6l3.1-0.3v3.9H82v2.4h-3.7v7.4
+                                     c0,2.6,0.2,2.8,2.8,2.8h0.8L81.7,39.5z"/>
+                                 </g>
+                                 <g>
+                                  <path class="text" d="M145.4,39.1l-0.2-1.5c-1.1,1.2-2.8,1.8-4.2,1.8c-4.1,0-6.9-3.4-6.9-7.7c0-4.1,2.6-7.7,6.9-7.7
+                                  c1.4,0,3,0.4,4.2,1.6v-9h3v22.6H145.4z M137.2,31.7c0,2.9,1.5,5.1,4,5.1c2.3,0,4.2-1.6,4.2-5c0-3.3-2-5.2-4.2-5.2
+                                  C138.7,26.6,137.2,28.8,137.2,31.7z"/>
+                                  <path class="text" d="M154.1,32c0.4,3.6,2.7,4.8,5.2,4.8c1.4,0,3.1-0.4,4.4-1l0.3,2.5c-1.1,0.5-2.8,1.1-5,1.1
+                                  c-5.3,0-8.1-3.6-8.1-7.8c0-4.2,2.7-7.7,7.2-7.7c3.7,0,6.5,2.4,6.5,6.4c0,0.5,0,1.1-0.2,1.7H154.1z M154.3,29.9h7.2
+                                  c0-1.8-1-3.3-3.3-3.3C155.9,26.6,154.8,27.9,154.3,29.9z"/>
+                                  <path class="text" d="M166.5,38.2l0.3-2.8c0.7,0.6,2.6,1.5,4.6,1.5c1.9,0,2.7-0.8,2.7-1.8c0-1.4-1.6-2-2.9-2.4
+                                  c-2.1-0.6-4.5-1.3-4.5-4.3c0-2.2,1.4-4.6,5.5-4.6c2,0,3.4,0.5,4.3,1l-0.3,2.7c-0.8-0.7-2.1-1.4-3.8-1.4c-1.6,0-2.7,0.6-2.7,1.9
+                                  c0,1.4,1.3,1.7,3.4,2.4c1.7,0.5,4.2,1.4,4.2,4.5c0,1.9-1,4.4-5.7,4.4C169.1,39.4,167.3,38.7,166.5,38.2z"/>
+                                  <path class="text" d="M180,21.3V18h3.1v3.3H180z M180,39.1V24.3h3.1v14.9H180z"/>
+                                  <path class="text" d="M185.6,42.2c0-1,0.5-2.5,2.6-3.3c-1.1-0.6-1.4-1.3-1.4-2c0-0.7,0.4-1.5,1.7-2.1c-1.9-1.4-2.5-3.2-2.5-4.9
+                                  c0-3.2,2.1-5.9,6.1-5.9c1.4,0,2.6,0.3,3.6,1c0.8-0.4,2-0.8,3.5-0.8h0.5l-0.3,2h-0.9c-0.2,0-0.9,0.1-1.4,0.2
+                                  c0.9,1.2,1.2,2.4,1.2,3.5c0,3.1-2.1,5.9-6,5.9c-0.7,0-1.4-0.1-2-0.2c-0.3,0.2-0.6,0.5-0.6,0.8c0,0.8,1.1,1,4.3,1.4
+                                  c2.3,0.4,6,1.1,6,4.3c0,2.6-2.5,4.7-7.4,4.7C187.5,46.7,185.6,44.3,185.6,42.2z M190.7,39.6c-1.3,0.4-2.3,1.4-2.3,2.4
+                                  c0,1.3,1.5,2.3,4.2,2.3c2.8,0,4.4-1.1,4.4-2.3c0-1.2-1.5-1.8-3.9-2.2C192.8,39.9,191.1,39.7,190.7,39.6z M188.8,29.8
+                                  c0,2.2,1.3,3.6,3.3,3.6c2.1,0,3.2-1.5,3.2-3.6c0-2.2-1.3-3.4-3.3-3.4C189.9,26.3,188.8,27.8,188.8,29.8z"/>
+                                  <path class="text" d="M212,39.1V31c0-3-1-4.4-3.6-4.4c-1.5,0-2.9,0.5-3.6,1.7v10.8h-3.1V24.3h2.6l0.2,1.3
+                                  c1.4-1.2,2.9-1.6,4.3-1.6c4.5,0,6.2,2.8,6.2,7v8.1H212z"/>
+                                  <path class="text" d="M217.7,38.2l0.3-2.8c0.7,0.6,2.6,1.5,4.6,1.5c1.9,0,2.7-0.8,2.7-1.8c0-1.4-1.6-2-2.9-2.4
+                                  c-2-0.6-4.5-1.3-4.5-4.3c0-2.2,1.4-4.6,5.5-4.6c2,0,3.4,0.5,4.3,1l-0.3,2.7c-0.8-0.7-2.1-1.4-3.8-1.4c-1.6,0-2.7,0.6-2.7,1.9
+                                  c0,1.4,1.3,1.7,3.4,2.4c1.7,0.5,4.2,1.4,4.2,4.5c0,1.9-1,4.4-5.7,4.4C220.2,39.4,218.5,38.7,217.7,38.2z"/>
+                              </g>
+                              <g>
+                                  <path fill="none" d="M108.1,29.8c0.2,1.3,0.5,2.7,1.7,3.1c0.3-1.6,3-1,2.3-3.6C110.5,28.5,109.7,29.1,108.1,29.8z"/>
+                                  <path fill="none" d="M131.6,5.2c-2.4-0.2-3.5,0.8-3.9,2.5l0,0.1c0,0,0,0.1,0,0.1c0,0.2,0.1,0.4,0.3,0.4l0.1,0
+                                  c1.1,0.6,3.5,0.5,4.2-0.3C132.6,6.5,131.3,6.6,131.6,5.2z"/>
+                                  <path id="fint" d="M124.1,6.9c-5.9-2.3-9.6,1.4-12.6,4c-19.2-2.6-17,13.3-18.8,27.4l0,0c0,0.3,0.2,0.5,0.5,0.5l0,0
+                                  c2.4-0.1,3.7,0.8,6.1,0.7l0,0c0.3,0,0.5-0.2,0.5-0.5c0-0.1,0-0.1,0-0.2l0,0c-1.1-3.4-1.3-8,1.4-9.9l0.1-0.1
+                                  c0.1-0.1,0.2-0.1,0.3-0.1c0.2,0,0.4,0.1,0.4,0.3l0,0.1c1.3,2.4,1.5,5.9,1.4,9.8l0,0c0,0.3,0.2,0.5,0.5,0.5h0c2.7,0,5.5,0,8.2,0
+                                  h0.1c0.2,0,0.4-0.1,0.5-0.3l0,0c1.3-2.9,3.4-5,5.1-7.5l0.1-0.1c0.1-0.1,0.2-0.2,0.4-0.2c0.2,0,0.4,0.1,0.5,0.3l0,0.1
+                                  c0.8,1.7,1,4.8,0.3,6.7l0,0.1c0,0.1,0,0.1,0,0.2c0,0.3,0.2,0.5,0.4,0.5c0,0,0,0,0.1,0l0,0c1.2,0.1,3.2-0.5,5.1-0.3l0.1,0
+                                  c0.2,0,0.4-0.1,0.5-0.3l0-0.1c1.6-5.6-4.1-12.1-3.6-15.5c0.7-5,11.1-6.5,13.7-10.8C141.1,3,127.1-4,124.1,6.9z M109.8,32.8
+                                  c-1.1-0.4-1.5-1.7-1.7-3.1c1.6-0.7,2.4-1.2,4-0.6C112.8,31.8,110.1,31.2,109.8,32.8z M132.1,8.1c-0.7,0.7-3.1,0.8-4.2,0.3l-0.1,0
+                                  c-0.2-0.1-0.3-0.3-0.3-0.4c0,0,0-0.1,0-0.1l0-0.1c0.4-1.7,1.6-2.7,3.9-2.5C131.3,6.6,132.6,6.5,132.1,8.1z"/>
+                              </g>
+                          </g>
+                      </svg>
+                      <!--<![endif]-->
                             <!--[if lte IE 8]>
                               <img src="images/elefintlogo.png" class="png_logo">
                               <![endif]-->
-                        </a>
+                          </a>
 
-                        <!-- Begin MailChimp Signup Form -->
-                        <div id="mc_embed_signup">
+                          <!-- Begin MailChimp Signup Form -->
+                          <div id="mc_embed_signup">
                             <form action="http://elefintdesigns.us2.list-manage.com/subscribe/post?u=ff95c087229b14ae18985e785&amp;id=6bb029d981" method="post" id="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                                 <div id="mc_embed_signup_scroll">
 
@@ -384,128 +355,7 @@
                 <div class="push"></div>
             </div> 
         </div>
-<!-- /sitecanvas -->
-</div>
-<!-- /sitewrap -->
-<script type="text/javascript">
-
-    $(document).ready(function() {
-
-        var owl = $('#menu');
-
-        owl.owlCarousel({
-
-            lazyLoad : true,
-            margin: 20,
-            loop: true,
-                navigation : false, // Show next and prev buttons
-                pagination: false,
-                responsiveRefreshRate: 0,
-                responsive:{
-                    0: {
-                        items: 1
-                    },
-                    500:{
-                        items:2
-                    },
-                    1000:{
-                        items:3
-                    }
-                }
-            });
-        
-        $('header .next').click(function() {
-            owl.trigger('next.owl.carousel');
-        })
-            // Go to the previous item
-            $('header .prev').click(function() {
-                // With optional speed parameter
-                // Parameters has to be in square bracket '[]'
-                owl.trigger('prev.owl.carousel', [300]);
-            });
-            
-            var sync1 = $('#opinionpieces'),
-            sync2 = $('#opinionsources'),
-            flag = false,
-            duration = 300;
-            
-            sync1.owlCarousel({
-                autoHeight: true,
-                animateIn: 'fadeInDown',
-                items: 1,
-                margin: 100,
-                mouseDrag: false,
-                nav: false,
-                responsiveRefreshRate: 0,
-                stagePadding:0,
-            })
-            .on('changed.owl.carousel', function (e) {
-                if (!flag) {
-                    flag = true;
-                    sync2.trigger('to.owl.carousel', [e.item.index, duration, true]);
-                    flag = false;
-                }
-            });
-            
-            sync2.owlCarousel({
-                items: 3,
-                nav: false,
-                responsiveRefreshRate: 0,
-                responsive:{
-                    0: {
-                        items: 1,
-                        margin: 60
-                    },
-                    500:{
-                        items:2,
-                        margin: 60
-                    },
-                    800: {
-                        items:3,
-                        margin: 40
-                    },
-                    1000:{
-                        margin: 120
-                    }
-                },
-                startPosition: 1,
-            })
-            .on('click', '.owl-item', function () {
-                sync1.trigger('to.owl.carousel', [$(this).index(), duration, true]);
-
-            })
-            .on('changed.owl.carousel', function (e) {
-                if (!flag) {
-                    flag = true;        
-                    sync1.trigger('to.owl.carousel', [e.item.index, duration, true]);
-                    flag = false;
-                }
-            });
-            //Hide/Show Opinion Pieces
-            sync1.hide();
-            $('.source').click(function() {
-                if (sync1.hasClass('closed')) {
-                    sync1.slideToggle();
-                    sync1.removeClass('closed');
-                }
-                else if ($(this).hasClass('current')) {
-                    if (!sync1.hasClass('closed')) {
-                        sync1.slideToggle();
-                        sync1.addClass('closed');
-                    }
-                }
-            });
-            $('.closequote').click(function() {
-                if (!sync1.hasClass('closed')) {
-                    sync1.slideToggle();
-                    sync1.addClass('closed');
-                }
-            });
-            $('.source').click(function() {
-                $(this).toggleClass( 'current');
-                $('.source').not(this).removeClass('current');
-            });
-
-        });
-</script>
+        <!-- /sitecanvas -->
+    </div>
+    <!-- /sitewrap -->
 </body>
